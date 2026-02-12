@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Пошук товару</h2>
-    <input
+    <input class="inputSearch"
       type="text"
       v-model="searchQuery"
       placeholder="Введіть назву товару"
@@ -72,3 +72,14 @@ export default {
   },
 };
 </script>
+
+<style scoped >
+  .inputSearch {
+    height: 35px;
+    width: 99%;
+    border: 2px solid #D8DCE5;
+    border-radius: 10px ;
+    font-size: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+</style>

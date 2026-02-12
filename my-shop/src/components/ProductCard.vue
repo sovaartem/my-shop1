@@ -42,7 +42,6 @@
         font-weight: bold;
     }
     .buy-button {
-        background-color: #007bff;
         color: #fff;
         font-weight: bold;
         border: none;
@@ -50,10 +49,14 @@
         padding: 10px 20px;
         cursor: pointer;
         margin-bottom: 20px;
+        background: linear-gradient(90deg , #00AEFF , #57C785 , #5396ED);
+        background-size: 200% 100%;
+        animation: shine 3s infinite;
+
 
     }
-    .buy-button:hover {
-        background-color: #0056b3;
-
-    }
+    
+ @keyframes shine {
+    to { background-position: 200% 0; }
+}
 </style>
